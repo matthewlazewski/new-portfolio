@@ -33,7 +33,19 @@ const UserHeader = ({ user }) => {
                         </a>
                     </p>
                 </div>
-            </Header> 
+            </Header>
+            <div>
+                <ViewResumeLink
+                    href={`https://gitconnected.com/${user.basics.username}/resume`}
+                    target="_blank"
+                    rel="nooperner noreferrer"
+                >
+                    <span>View Resume</span>
+                    <ArrowRight16 />
+                </ViewResumeLink>
+            </div>
         </HeaderContainer>
     )
 }
+
+export default UserHeader;
