@@ -3,7 +3,7 @@ import Layout from '../../components/Layout';
 import { SectionTitle, Pill } from '../../styles';
 import { ProjectItem, ProjectTitle, SkillContainer } from './styles';
 
-const Projects = ({ User }) => {
+const Projects = ({ user }) => {
     return (
         <Layout user={user}>
             <div>
@@ -14,7 +14,7 @@ const Projects = ({ User }) => {
                           <ProjectTitle>{project.name}</ProjectTitle> 
                           <p>{project.state}</p> 
                           <SkillContainer>
-                              {[...project.languages, ...project.libraries].mapt((item, j) => (
+                              {[...project.languages, ...project.libraries].map((item, j) => (
                                   <Pill key={j}>{item}</Pill>
                               ))}
                           </SkillContainer>

@@ -7,8 +7,8 @@ function App() {
     fetch('https://gitconnected.com/v1/portfolio/matthewlazewski')
       .then(res => res.json())
       .then(user => {
-        setUser(user)
-      })
+        setUser(user);
+      });
   }, []);
 
   if(!user) {
