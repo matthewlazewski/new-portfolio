@@ -8,7 +8,7 @@ a {
   color: $text-04;
 }
 
-.bs--side-nav__navigation {
+.bx--side-nav__navigation {
   background-color: $ui-background;
 }
 
@@ -18,10 +18,10 @@ a.bx--side-nav__link--current > span.bx--side-nav__link-text {
   color: $text-04;
 }
 
-.bx--side-nav__item:not(.bs--side-nav__item--active)
-  > .bs--side-nav__link:hover {
-    background-color: $ui-01;
-    color: $text-04;
+.bx--side-nav__item:not(.bx--side-nav__item--active)
+  > .bx--side-nav__link:hover {
+  background-color: $ui-01;
+  color: $text-04;
 }
 
 a.bx--side-nav__link > .bx--side-nav__link-text,
